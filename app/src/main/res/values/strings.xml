@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">HandyMan</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="utility">Utility</string>
+    <string name="No_Content">No Handymen available</string>
+
+    <string-array name="Proff">
+        <item name="Carp">Carpenter</item>
+        <item name="Plumb">Plumber</item>
+        <item name="Elec">Electrician</item>
+        <item name="Cook">Cook</item>
+        <item name="Maid">Maid</item>
+        <item name="Watchman">Watchman</item>
+    </string-array>
+    <string name="title_activity_handy_man_view">HandyMan_view</string>
+</resources>
