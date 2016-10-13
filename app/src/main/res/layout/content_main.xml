@@ -29,7 +29,7 @@
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true"
         android:spinnerMode="dropdown"
-        android:elevation="2dp"
+        android:padding="10dp"
         android:focusable="false"
         android:gravity="center"
         android:layoutMode="opticalBounds" />
