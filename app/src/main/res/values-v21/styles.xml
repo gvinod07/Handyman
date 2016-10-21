@@ -6,6 +6,7 @@
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
+<<<<<<< HEAD
 
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
@@ -39,4 +40,6 @@
         <item name="android:navigationBarColor">@color/blue_grey</item>
     </style>
 
+=======
+>>>>>>> 45d5cbdb3e1f96f811419322114e1839b9925a29
 </resources>

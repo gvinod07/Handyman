@@ -3,6 +3,7 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
+<<<<<<< HEAD
         <item name="colorPrimary">@color/teal</item>
         <item name="colorPrimaryDark">@color/teal_dark</item>
         <item name="colorAccent">@color/orange_deep</item>
@@ -54,10 +55,23 @@
     </style>
 
 
+=======
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+>>>>>>> 45d5cbdb3e1f96f811419322114e1839b9925a29
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+<<<<<<< HEAD
     <style name="App.Style.Spinner" parent="Widget.AppCompat.ListView.DropDown">
         <item name="android:divider">@color/dividerColor</item>
         <item name="android:dividerHeight">0.5dp</item>
@@ -81,3 +95,6 @@
 
     <dimen name="typography_subheading">14sp</dimen>
 </resources>
+=======
+</resources>
+>>>>>>> 45d5cbdb3e1f96f811419322114e1839b9925a29

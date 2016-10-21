@@ -1,17 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     package="com.purlieus.purlieus">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
+=======
+    package="demonic.handyman">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+>>>>>>> 45d5cbdb3e1f96f811419322114e1839b9925a29
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
+<<<<<<< HEAD
         android:theme="@style/AppTheme"        >
         <activity
             android:name=".activities.MainActivity"
@@ -45,6 +54,13 @@
             android:name=".activities.SplashActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:label="@string/app_name">
+=======
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+>>>>>>> 45d5cbdb3e1f96f811419322114e1839b9925a29
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -52,6 +68,7 @@
             </intent-filter>
         </activity>
         <activity
+<<<<<<< HEAD
             android:name=".activities.DetailsActivity"
             android:theme="@style/DetailsTheme"
             android:label="@string/app_name"
@@ -72,6 +89,11 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
+=======
+            android:name=".HandyMan_view"
+            android:label="@string/title_activity_handy_man_view"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+>>>>>>> 45d5cbdb3e1f96f811419322114e1839b9925a29
     </application>
 
 </manifest>
