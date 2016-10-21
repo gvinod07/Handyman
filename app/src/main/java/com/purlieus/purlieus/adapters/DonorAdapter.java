@@ -22,7 +22,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by Shaurya on 06-Oct-16.
+ * Created by Shaurya and modified by Harambe on 21-Oct-16.
  */
 
 public class DonorAdapter extends RecyclerView.Adapter<DonorAdapter.UserViewHolder> {
