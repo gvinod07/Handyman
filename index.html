@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mars Rover</title>
+<meta name="viewport" content = "height = device-height, width = 360, initial-scale=1.0, minimum-scale=1.0, user-scalable = no" />
+<script type="text/javascript" src="/jquery.js"></script>
+<script type="text/javascript" src="/webiopi.js"></script>
+
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+    <style type="text/css">
+    #slider { margin: 10px; }
+  </style>
+  <script>
+      $(document).ready(function () {
+          $("#slider").slider(
+          {
+              range: false,
+              min: 0,
+              max: 100,
+              step: 1,
+              change: showValue
+          });
+          function showValue(event, ui) {
+              $("#val").html(ui.value);
+		webiopi.callMacro("GetSpeed", ui.value);
+          }
+      });
+  </script>
+
+<script type="text/javascript">
+	function init() {
+	}
+
+	document.onkeydown = function(e) {
+    switch (e.keyCode) {
+        case 37:
+            alert('left');
+            break;
+        case 38:
+            Forward();
+            break;
+        case 39:
+            alert('right');
+            break;
+        case 40:
+            Reverse();
+            break;
+    }
+};	
+	document.onkeyup = function(e) {
+	switch(e.keyCode){
+		case 38:
+		   Stop();
+		   break;
+		case 40:
+		   Stop();
+		   break;
+	}	
+};
+	function Stop() {
+	webiopi().callMacro("ButtonStop");
+	}
+	function Forward() {
+	webiopi().callMacro("ButtonForward");
+	}
+	function Reverse() {
+	webiopi().callMacro("ButtonReverse");
+	}
+	function TurnLeft() {
+	webiopi().callMacro("ButtonTurnLeft");
+	}
+	function TurnRight() {
+	webiopi().callMacro("ButtonTurnRight");
+	}
+	webiopi().ready(init);
+  </script>
+<style>
+html, body {
+	height:100%;
+	margin:0;
+}
+
+.main {
+	height:100%;
+	width:100%;
+}
+
+.container {
+	display:table;
+	height:100%;
+	margin:0 auto;
+	width: 360px;
+}
+
+.center {
+	display:table-cell;
+	height:480px;
+	width: 360px;
+	vertical-align:middle;
+}
+
+.arrow-top, .arrow-down {
+	clear:both;
+	text-align:center;
+	width:100%;
+}
+
+.middle-row {
+	float: left;
+	margin:20px 0;
+	width:360px;
+}
+
+.arrow-left {
+	float: left;
+	margin-right:20px;
+}
+
+.stop {
+	float: left;
+}
+
+.arrow-right {
+	float: left;
+	margin-left:20px;
+}
+
+a {
+ opacity:0.80;
+}
+
+a:hover {
+ opacity:1;
+}
+</style>
+</head>
+
+<body>
+<div class="main">
+	<div class="container">
+    	<div class="center">
+            <div class="arrow-top" onmousedown="Forward()" onmouseup="Stop()"><a href="#"><img src="../arrow-top.png" alt="Up"></a></div>
+            <div class="middle-row">
+                <div class="arrow-left" onmousedown="TurnLeft()"><a href="#"><img src="../arrow-left.png" alt="Up"></a></div>
+                <div class="stop" onmousedown="Stop()"><a href="#"><img src="../btn-stop.png" alt="Up"></a></div>
+                <div class="arrow-right" onmousedown="TurnRight()"><a href="#"><img src="../arrow-right.png" alt="Up"></a></div>
+            </div>
+            <div class="arrow-down" onmousedown="Reverse()" onmouseup="Stop()"><a href="#"><img src="../arrow-down.png" alt="Up"></a></div>
+       		<div id="slider"></div>
+           	 <span id="val"></span>
+ 	   </div>
+    </div>
+</div>
+</body>
+</html>
