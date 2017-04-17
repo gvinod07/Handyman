@@ -6,13 +6,26 @@
         <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="gradleHome" value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1" />
+<<<<<<< HEAD
+        <option name="gradleJvm" value="1.8" />
+=======
+>>>>>>> 45d5cbdb3e1f96f811419322114e1839b9925a29
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
           </set>
         </option>
+<<<<<<< HEAD
+        <option name="myModules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+          </set>
+        </option>
+=======
         <option name="resolveModulePerSourceSet" value="false" />
+>>>>>>> 45d5cbdb3e1f96f811419322114e1839b9925a29
       </GradleProjectSettings>
     </option>
   </component>
